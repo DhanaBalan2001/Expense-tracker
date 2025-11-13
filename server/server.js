@@ -30,18 +30,30 @@ const port = process.env.PORT || 5000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(cors({
-    origin: [ 'http://localhost:5173', 'https://expense-tracker-dhanabalan.netlify.app'],
-    credentials: true ,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// Manual CORS headers
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    if (req.method === 'OPTIONS') {
+        return res.sendStatus(200);
+    }
+    next();
+});
 app.use(express.json());
 
 // MongoDB connection
+if (!process.env.MONGODB) {
+    console.error('MONGODB environment variable is not set');
+    process.exit(1);
+}
+
 connect(process.env.MONGODB)
 .then(() => console.log('MongoDB connection established successfully'))
-.catch(err => console.log('MongoDB connection error:', err));
+.catch(err => {
+    console.log('MongoDB connection error:', err);
+    process.exit(1);
+});
 
 const connection = _connection;
 connection.once('open', () => {
