@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import './Sidebar.css';
+import './sidebar.css';
 
 const Sidebar = () => {
   const location = useLocation();
