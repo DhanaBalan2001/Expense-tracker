@@ -1,0 +1,107 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .profile-main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .page-title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .profile-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .profile-card .card-header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+  }
+  
+  .danger-zone .card-header {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .profile-avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .account-info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .account-info-item:last-child {
+    border-bottom: none;
+  }
+  
+  .delete-confirm {
+    background-color: rgba(220, 53, 69, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  @media (max-width: 992px) {
+    .profile-content {
+      flex-direction: column;
+    }
+    
+    .profile-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile-main {
+      padding: 15px;
+    }
+    
+    .page-title {
+      font-size: 1.5rem;
+    }
+    
+    .profile-avatar {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  

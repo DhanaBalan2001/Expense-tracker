@@ -1,0 +1,140 @@
+.budget-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .budget-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .budget-main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .page-title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .dashboard-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    height: 100%;
+    transition: transform 0.2s;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .budget-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    height: 100%;
+    transition: transform 0.2s;
+  }
+  
+  .budget-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .budget-card .card-header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+  }
+  
+  .progress-container {
+    margin: 15px 0;
+  }
+  
+  .progress {
+    height: 20px;
+    border-radius: 10px;
+  }
+  
+  .budget-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .budget-alert {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .budget-alert.alert-danger {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border-color: rgba(220, 53, 69, 0.2);
+  }
+  
+  .budget-alert.alert-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #856404;
+    border-color: rgba(255, 193, 7, 0.2);
+  }
+  
+  .budget-alert.alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    border-color: rgba(40, 167, 69, 0.2);
+  }
+  
+  .form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .category-selector {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  @media (max-width: 992px) {
+    .budget-content {
+      flex-direction: column;
+    }
+    
+    .budget-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .budget-main {
+      padding: 15px;
+    }
+    
+    .page-title {
+      font-size: 1.5rem;
+    }
+  }
+  

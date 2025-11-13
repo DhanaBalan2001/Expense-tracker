@@ -1,0 +1,11 @@
+.category-chart {
+    height: 300px;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .category-chart {
+      height: 250px;
+    }
+  }
+  

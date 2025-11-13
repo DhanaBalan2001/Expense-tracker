@@ -1,0 +1,49 @@
+.recurring-expenses-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .recurring-expenses-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .recurring-expenses-main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .page-title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .recurring-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  .recurring-table td {
+    vertical-align: middle;
+  }
+  
+  .category-badge {
+    font-weight: normal;
+    padding: 5px 10px;
+  }
+  
+  @media (max-width: 992px) {
+    .recurring-expenses-content {
+      flex-direction: column;
+    }
+    
+    .button-container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  

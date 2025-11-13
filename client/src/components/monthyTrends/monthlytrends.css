@@ -1,0 +1,11 @@
+.monthly-trends {
+    height: 300px;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .monthly-trends {
+      height: 250px;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+.recent-transactions {
+    overflow-x: auto;
+  }
+  
+  .recent-transactions table {
+    min-width: 600px;
+  }
+  
+  .recent-transactions th {
+    font-weight: 500;
+    color: #6c757d;
+    border-top: none;
+  }
+  
+  .recent-transactions td {
+    vertical-align: middle;
+  }
+  
+  .recent-transactions tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+  }
+  
