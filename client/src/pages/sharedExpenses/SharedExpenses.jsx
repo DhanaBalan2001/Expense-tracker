@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Button, Form, Table, Badge } from 'react-boo
 import Navbar from '../../components/navbar/Navbar.jsx';
 import Sidebar from '../../components/sidebar/Sidebar.jsx';
 import { getSharedExpenses, createSharedExpense, settleExpense } from '../../services/shared.js';
-import './sharedExpenses.css';
+import './sharedexpenses.css';
 
 const SharedExpenses = () => {
   const [sharedExpenses, setSharedExpenses] = useState([]);
