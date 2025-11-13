@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Card, Alert } from 'react-bootstrap';
 import { useNavigate, Link } from 'react-router-dom';
 import { login } from '../../services/auth.js';
-import './Login.css';
+import './login.css';
 
 const Login = () => {
   const [formData, setFormData] = useState({
