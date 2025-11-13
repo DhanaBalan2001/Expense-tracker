@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
-import './MonthlyTrends.css';
+import './monthlytrends.css';
 
 const MonthlyTrends = ({ data = [] }) => {
   const chartRef = useRef(null);
