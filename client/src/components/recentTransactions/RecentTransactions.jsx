@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table, Badge } from 'react-bootstrap';
-import './RecentTransactions.css';
+import './recenttransactions.css';
 
 const RecentTransactions = ({ transactions = [] }) => {
   if (transactions.length === 0) {
