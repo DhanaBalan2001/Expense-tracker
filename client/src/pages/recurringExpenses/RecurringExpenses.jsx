@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Button, Form, Table, Badge } from 'react-boo
 import Navbar from '../../components/navbar/Navbar.jsx';
 import Sidebar from '../../components/sidebar/Sidebar.jsx';
 import { getRecurringExpenses, scheduleRecurringExpense, updateRecurring, deleteRecurring } from '../../services/recurring.js';
-import './recurringExpenses.css';
+import './recurringexpenses.css';
 
 const RecurringExpenses = () => {
   const [recurringExpenses, setRecurringExpenses] = useState([]);
