@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
-import './CategoryChart.css';
+import './categorychart.css';
 
 const CategoryChart = ({ data = [] }) => {
   const chartRef = useRef(null);
