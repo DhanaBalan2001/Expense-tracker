@@ -221,13 +221,13 @@ npm run dev
 ## 🎨 Screenshots
 
 ### Dashboard
-![Dashboard](https://via.placeholder.com/800x400/4CAF50/FFFFFF?text=Smart+Dashboard+with+Real-time+Analytics)
+<img width="1920" height="969" alt="Smart Dashboard with Real-time Analytics" src="https://github.com/user-attachments/assets/52bcc97d-7912-48ed-8210-8a3ffca00749" />
 
 ### Expense Management
-![Expenses](https://via.placeholder.com/800x400/2196F3/FFFFFF?text=Comprehensive+Expense+Management)
+<img width="1920" height="966" alt="Comprehensive Expense Management" src="https://github.com/user-attachments/assets/bef08190-bcb3-4518-99d7-f813d5baf90c" />
 
 ### Analytics & Reports
-![Reports](https://via.placeholder.com/800x400/FF9800/FFFFFF?text=Advanced+Analytics+%26+Reporting)
+<img width="1920" height="967" alt="Advanced Analytics & Reporting" src="https://github.com/user-attachments/assets/d36269cc-1b73-4fb9-85d6-329dd7854593" />
 
 ---
 
